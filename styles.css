@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2a2a2a; 
+    color: #fff; 
+}
+
+header {
+    background: #5D3FD3; 
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 80px; 
+}
+
+
+
+.main-image {
+    padding-top: 1px;
+    background-color: #2a2a2a; 
+    height: 600px;
+    background-image: url(controller.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titel {
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.newsletter {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #5D3FD3; 
+}
+
+.newsletter form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 0.5em 1em;
+    border: none;
+    background: #4B2BB4; 
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter button:hover {
+    background: #3A3A3A; 
+}
+
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
