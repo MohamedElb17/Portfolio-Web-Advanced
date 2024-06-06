@@ -99,3 +99,19 @@ footer {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em;
+    width: 200px;
+    text-align: center;
+    background-color: #5D3FD3; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
