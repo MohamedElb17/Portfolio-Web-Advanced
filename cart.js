@@ -53,3 +53,5 @@ export function updateCartDisplay() {
     totalItem.textContent = `Total: €${totalPrice.toFixed(2)}`;
     cartList.appendChild(totalItem);
 }
+
+updateCartDisplay();

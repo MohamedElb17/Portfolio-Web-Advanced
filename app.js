@@ -21,3 +21,13 @@ async function displayProducts() {
         productList.appendChild(productItem);
     });
 }
+
+
+function setupEventListeners() {
+    document.querySelector('.product-list').addEventListener('click', (e) => {
+        if (e.target.classList.contains('add-to-cart')) {
+            const id = e.target.dataset.id;
+            addToCart(id);
+        }
+    });
+}
