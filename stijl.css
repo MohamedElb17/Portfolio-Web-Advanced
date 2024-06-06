@@ -160,8 +160,8 @@ button.add-to-cart:hover {
 }
 
 .main-image:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Voeg een schaduw toe rondom de div bij hover */
-    transform: translateY(-5px); /* Verplaats de div licht naar boven bij hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px); 
 }
 
 
@@ -171,8 +171,35 @@ button.add-to-cart:hover {
     font-size: 55px;
     color: white;
     padding-top: 20px;
-    font-family: 'Montserrat', sans-serif; /* Gebruik een modern lettertype */
+    font-family: 'Montserrat', sans-serif; 
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+
+
+.newsletter {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #5D3FD3; 
+}
+
+.newsletter:hover {
+    box-shadow: 10px 20px 10px 20px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px); 
+}
+
+
+.newsletter form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
