@@ -147,3 +147,32 @@ button.add-to-cart:hover {
 .total-price {
     font-weight: bold;
 }
+
+
+.main-image {
+    padding-top: 1px;
+    background-color: #2a2a2a; 
+    height: 600px;
+    background-image: url(controller.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-image:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Voeg een schaduw toe rondom de div bij hover */
+    transform: translateY(-5px); /* Verplaats de div licht naar boven bij hover */
+}
+
+
+
+.titel {
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif; /* Gebruik een modern lettertype */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
