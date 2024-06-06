@@ -203,3 +203,44 @@ button.add-to-cart:hover {
     border-radius: 5px;
 }
 
+
+.newsletter button {
+    padding: 0.5em 1em;
+    border: none;
+    background: #4B2BB4; 
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+
+.newsletter button:hover {
+    background: #3A3A3A; 
+}
+
+.cart {
+    background-color: #5D3FD3; 
+    padding: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart-items li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-items li button {
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 0.3em 0.6em;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cart-items li button:hover {
+    background: #e60023;
+}
+
