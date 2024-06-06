@@ -19,20 +19,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
 
 main {
     padding-top: 80px; 
@@ -114,4 +100,26 @@ footer {
 .product-item:hover {
     transform: translateY(-10px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #3A3A3A; 
+}
+
+.product-item h2 {
+    font-size: 1.5em;
+    background-color: #4B2BB4; 
+    padding: 0.5em;
+    margin: -1em -1em 1em -1em;
+}
+
+.product-item .price {
+    font-size: 1.2em;
+    background-color: #3A3A3A; 
+    padding: 0.5em;
+    margin: 1em 0;
 }
