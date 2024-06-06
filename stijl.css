@@ -123,3 +123,27 @@ footer {
     padding: 0.5em;
     margin: 1em 0;
 }
+
+button.add-to-cart {
+    background: darkorange;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+}
+
+button.add-to-cart:hover {
+    transform: scale(1.1);
+}
+
+
+#cart, #newsletter {
+    padding: 1em;
+}
+
+
+.total-price {
+    font-weight: bold;
+}
