@@ -30,4 +30,18 @@ function setupEventListeners() {
             addToCart(id);
         }
     });
+
+
+
+    document.querySelector('#newsletter-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.querySelector('#email').value;
+        if (validateEmail(email)) {
+            alert('Thank you for subscribing!');
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    });
+
+    
 }
