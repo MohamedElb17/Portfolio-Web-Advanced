@@ -1,15 +1,15 @@
-const form = document.getElementById("myForm");
-const nameInput = document.getElementById("name");
-const nameError = document.getElementById("nameError");
-const emailInput = document.getElementById("email");
-const emailError = document.getElementById("emailError");
+let form = document.getElementById("myForm"); //Elementen selecteren
+let nameInput = document.getElementById("name");
+let nameError = document.getElementById("nameError");
+let emailInput = document.getElementById("email");
+let emailError = document.getElementById("emailError");
 
-form.addEventListener("submit", validateForm);
+form.addEventListener("submit", validateForm); //Event aan een element koppelen
 
-function validateForm(event) {
+function validateForm(event) { //Formulier valideren
     event.preventDefault(); 
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
+    let name = nameInput.value.trim();
+    let email = emailInput.value.trim();
 
     if (name === "") {
         nameError.textContent = "Name is required";
@@ -32,7 +32,7 @@ function validateForm(event) {
 
     if (name !== "" && email !== "" && isValidEmail(email)) {
        
-        alert("Form submitted successfully!");
+        alert("Form submitted!");
     }
 }
 

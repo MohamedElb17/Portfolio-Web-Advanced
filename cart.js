@@ -1,10 +1,12 @@
 import { products } from './products.js';
 
+
 let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-const MAX_PRODUCTS = 2;
+const MAX_PRODUCTS = 2; //Gebruiken van een constante
 
 
-const clickCounts = {};
+
+let clickCounts = {};
 
 export function addToCart(id) {
   
@@ -29,29 +31,37 @@ export function removeFromCart(index) {
 }
 
 export function updateCartDisplay() {
-    const cartList = document.querySelector('.cart-items');
+    let cartList = document.querySelector('.cart-items'); //Elementen selecteren
     cartList.innerHTML = '';
     let totalPrice = 0;
 
-    cartItems.forEach((itemId, index) => {
-        const product = products.find(p => p.id == itemId);
+    cartItems.forEach((itemId, index) => {  //elementen manipuleren
+        let product = products.find(p => p.id == itemId);
         if (product) {
             totalPrice += product.price;
-            const listItem = document.createElement('li');
+            let listItem = document.createElement('li');
             listItem.textContent = `${product.name} - €${product.price}`;
 
-            const removeButton = document.createElement('button');
+            let removeButton = document.createElement('button');
             removeButton.textContent = 'Remove';
-            removeButton.addEventListener('click', () => removeFromCart(index));
+            removeButton.addEventListener('click', () => removeFromCart(index)); //Event aan een element koppelen
             listItem.appendChild(removeButton);
 
             cartList.appendChild(listItem);
         }
     });
 
-    const totalItem = document.createElement('li');
+    
+
+    let totalItem = document.createElement('li');
     totalItem.textContent = `Total: €${totalPrice.toFixed(2)}`;
     cartList.appendChild(totalItem);
+
+
+
+
 }
 
 updateCartDisplay();
+
+

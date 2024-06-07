@@ -8,38 +8,38 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function displayProducts() {
-    const products = await fetchProducts();
-    const productList = document.querySelector('.product-list');
+    let products = await fetchProducts();
+    let productList = document.querySelector('.product-list'); //Elementen selecteren
     products.forEach(product => {
-        const productItem = document.createElement('div');
+        let productItem = document.createElement('div');
         productItem.classList.add('product-item');
         productItem.innerHTML = `
             <h2>${product.name}</h2>
             <p class="price">€ ${product.price}</p>
             <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
-        `;
+        `; //Gebruiken van template literals
         productList.appendChild(productItem);
     });
 }
 
 
 function setupEventListeners() {
-    document.querySelector('.product-list').addEventListener('click', (e) => {
+    document.querySelector('.product-list').addEventListener('click', (e) => { //Event aan een element koppelen
         if (e.target.classList.contains('add-to-cart')) {
-            const id = e.target.dataset.id;
+            let id = e.target.dataset.id;
             addToCart(id);
         }
     });
 
 
 
-    document.querySelector('#newsletter-form').addEventListener('submit', (e) => {
+    document.querySelector('#newsletter-form').addEventListener('submit', (e) => { //Event aan een element koppelen
         e.preventDefault();
-        const email = document.querySelector('#email').value;
+        let email = document.querySelector('#email').value;
         if (validateEmail(email)) {
-            alert('Thank you for subscribing!');
+            alert('Subscribed!');
         } else {
-            alert('Please enter a valid email address.');
+            alert('not valid email adress');
         }
     });
 

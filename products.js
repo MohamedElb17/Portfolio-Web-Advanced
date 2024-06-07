@@ -11,3 +11,7 @@ export const products = [
     { id: 10, name: 'Elden Ring PS5', price: 9.99 },
     
 ];
+
+const newProducts = [...products, { id: 11, name: 'New Game', price: 49.99 }];
+console.log(newProducts); //Spread & Rest operator
+
