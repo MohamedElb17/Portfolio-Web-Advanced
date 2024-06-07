@@ -1,7 +1,7 @@
-export async function fetchProducts() {
+export async function fetchProducts() { //Async & Await  //Fetch om data op te halen
   
     return new Promise((resolve) => {
-        setTimeout(() => {
+        setTimeout(() => { //api.js
             resolve([
                 { id: 1, name: 'Red Dead Redemption II PS4', price: 19.99 },
                 { id: 2, name: 'Assassins Creed II PS3', price: 29.99 },

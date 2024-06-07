@@ -2,16 +2,16 @@ import { fetchProducts } from './api.js';
 import { addToCart, updateCartDisplay } from './cart.js';
 import { validateEmail } from './validemail.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { // Self executing function //Event aan een element koppelen
     displayProducts();
     setupEventListeners();
 });
 
-async function displayProducts() {
-    let products = await fetchProducts();
+async function displayProducts() { //Async & Await
+    let products = await fetchProducts(); //Fetch om data op te halen //Async & Await
     let productList = document.querySelector('.product-list'); //Elementen selecteren
-    products.forEach(product => {
-        let productItem = document.createElement('div');
+    products.forEach(product => { //Iteration over een array
+        let productItem = document.createElement('div');//Elementen manipuleren
         productItem.classList.add('product-item');
         productItem.innerHTML = `
             <h2>${product.name}</h2>
@@ -23,12 +23,12 @@ async function displayProducts() {
 }
 
 
-function setupEventListeners() {
+function setupEventListeners() { 
     document.querySelector('.product-list').addEventListener('click', (e) => { //Event aan een element koppelen
         if (e.target.classList.contains('add-to-cart')) {
             let id = e.target.dataset.id;
             addToCart(id);
-        }
+        } //Callback Function
     });
 
 

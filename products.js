@@ -1,5 +1,5 @@
 export const products = [
-    { id: 1, name: 'Red Dead Redemption II PS4', price: 19.99 },
+    { id: 1, name: 'Red Dead Redemption II PS4', price: 19.99 }, //JSON manipuleren en weergeven
     { id: 2, name: 'Assassins Creed II PS3', price: 29.99 },
     { id: 3, name: 'Ghost of Tsushima PS5', price: 39.99 },
     { id: 4, name: 'God of War PS3', price: 49.99 },
