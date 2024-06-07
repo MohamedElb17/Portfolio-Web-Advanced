@@ -7,7 +7,7 @@ let productNamen = products.map(({ name }) => name); // Destructuring
 let productPrijzen = [...products.map(({ price }) => price)]; // Spread operator
 
 
-let totalePrijs = products.reduce((total, { price }) => total + price, 0); // Consumer method (reduce)
+let totalePrijs = products.reduce((total, { price }) => total + price, 0); // Consumer method
 
 
 console.log('Productnamen:', productNamen);
